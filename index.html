@@ -13,6 +13,9 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/238c059d41.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
@@ -49,7 +52,7 @@
         </div>
     </nav>
 
-    <article class="container mt-3">
+    <!-- <div class="container alert-container">
         <div class="row d-none d-sm-block">
             <div class="col-12">
                 <div class="alert alert-warning">
@@ -59,18 +62,22 @@
                 </div>
             </div>
         </div>
+    </div> -->
+    <div class="container-fluid callout-container">
         <!-- Callout -->
+        <div class="opaque-overlay">&nbsp;</div>
         <div class="row">
             <div class="col-12">
                 <section class="callout jumbotron text-center">
-                    <h1>The finest whiskeys delivered to your doorstep.</h1>
+                    <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
+                    <hr class="block-divider block-divider--orange">
                     <p class="lead">
                         Sign up today to start receiving the world's best whiskey every month.
                         <s class="d-none d-sm-inline">€19.99</s>
                         <span class="d-inline d-sm-none"><br></span>
                         <strong><mark>First one is free!</mark></strong>
                     </p>
-                    <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign
+                    <button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign
                         up!</button>
                     <p class="text-muted">
                         <small>
@@ -82,9 +89,10 @@
             </div>
         </div>
         <!-- /.callout -->
-        <hr>
+    </div>
 
-        <!-- Quotes -->
+    <!-- Quotes -->
+    <div class="container quotes-container">
         <section class="quotes">
             <div class="row">
                 <div class="col-12 my-5">
@@ -124,9 +132,10 @@
             </div>
         </section>
         <!-- /.quotes -->
-        <hr>
+    </div>
 
-        <!-- Features -->
+    <!-- Features -->
+    <div class="container features-container">
         <section class="features">
             <div class="row">
                 <div class="col-12 my-5">
@@ -150,7 +159,8 @@
                     <div class="feature">
                         <h3><i class="fa-regular fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                             ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>
@@ -171,47 +181,47 @@
             </div>
         </section>
         <!-- /.features -->
-        <hr>
+    </div>
 
-        <!-- Monthly Favourites -->
-        <section>
-            <div class="col-12">
-                <h2 class="text-uppercase">Top 5 Whiskeys:</h2>
-            </div>
-            <div class="col-12">
-                <table class="table table-striped">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">Name</th>
-                            <th scope="col">Origin</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Jameson</td>
-                            <td>Ireland</td>
-                        </tr>
-                        <tr>
-                            <td>Bushmills</td>
-                            <td>United Kingdom</td>
-                        </tr>
-                        <tr>
-                            <td>Tanduay</td>
-                            <td>Philippines</td>
-                        </tr>
-                        <tr>
-                            <td>Powers</td>
-                            <td>Ireland</td>
-                        </tr>
-                        <tr>
-                            <td>Jack Daniel's</td>
-                            <td>USA</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-        <!-- /.monthy favourites -->
+    <!-- Monthly Favourites -->
+    <section>
+        <div class="col-12">
+            <h2 class="text-uppercase">Top 5 Whiskeys:</h2>
+        </div>
+        <div class="col-12">
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Origin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jameson</td>
+                        <td>Ireland</td>
+                    </tr>
+                    <tr>
+                        <td>Bushmills</td>
+                        <td>United Kingdom</td>
+                    </tr>
+                    <tr>
+                        <td>Tanduay</td>
+                        <td>Philippines</td>
+                    </tr>
+                    <tr>
+                        <td>Powers</td>
+                        <td>Ireland</td>
+                    </tr>
+                    <tr>
+                        <td>Jack Daniel's</td>
+                        <td>USA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- /.monthy favourites -->
 
     </article>
 
@@ -235,8 +245,7 @@
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password"
-                                placeholder="Password">
+                            <input type="password" class="form-control" id="password" placeholder="Password">
                         </div>
                         <div class="form-group">
                             <label for="repeatPassword">Repeat Password</label>
